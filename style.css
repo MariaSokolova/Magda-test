@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+}
+
+/* Document for screen */
+
+body {
+    background-color: coral;
+    font-family: "Sen", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#page {
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    margin: 0 auto;
+    max-width: 50%;
+    border: 5px solid gray;
+    width:50%;
+}
+
+/* HEADER */
+
+.header {
+
+    width: 50%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    margin:auto;
+    z-index: 2;
+    border: 6px solid greenyellow;
+
+}
+
+.logo-page {
+    font-weight: 400;
+    font-size: 2.6em;
+    color: #263396;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    border: 4px solid blueviolet;
+    width:80%;
+    margin: 0 auto;
+
+
+
+}
+
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+ul.menu-row {
+    display: flex;
+    list-style: none;
+}
+
+
+a.menu_link {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #454545;
+    text-decoration: none;
+    padding: 2em 2em;
+    position:relative;
+}
+
+
+.underline-link::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width:60px;
+    right: 0px;
+    bottom: 25px;
+    left: 18px;
+    background-color:rgba(84, 84, 212, 1);
+
+}
+
+.underline-link:hover {
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERIES  */
+
+@media (max-width: 600px) {
+
+
+    /* for mobile */
+    /* HEADER */
+    .header {
+        width: 100%;
+        position: relative;
+        margin: 0;
+
+
+    }
+
+    .logo-page {
+        margin: 0;
+        font-size: 1.4em;
+    }
+
+    .navbar {
+        width: 100%;
+
+    }
+
+
+    ul.menu-row {
+        margin: 0;
+    }
+
+    a.menu_link {
+        font-size: 1.2em;
+        line-height: 0.6em;
+        margin: 0;
+        padding: 0em 0.2em;
+    }
+
+
+    .underline-link::before {
+        width: 40px;
+        left: 0px;
+    }
+}
