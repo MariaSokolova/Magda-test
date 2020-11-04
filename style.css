@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-
+html, body{
     width: 100%;
 }
 
@@ -19,30 +17,27 @@ body {
     font-weight: 400;
 }
 
+body .content{
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
 #page {
     display:flex;
     flex-direction:column;
     min-height:100vh;
     margin: 0 auto;
-    max-width: 50%;
     border: 5px solid gray;
-    width:50%;
 }
 
 /* HEADER */
 
 .header {
 
-    width: 50%;
+    width: 100%;
     background-color: #ffffff;
-    position: fixed;
-    top: 0;
-    left:0;
-    right:0;
-    margin:auto;
     z-index: 2;
     border: 6px solid greenyellow;
-
 }
 
 .logo-page {
@@ -55,7 +50,6 @@ body {
 
 .navbar {
     border: 4px solid blueviolet;
-    width:80%;
     margin: 0 auto;
 
 
@@ -111,21 +105,13 @@ a.menu_link {
     /* for mobile */
     /* HEADER */
     .header {
-        width: 100%;
         position: relative;
         margin: 0;
-
-
     }
 
     .logo-page {
         margin: 0;
         font-size: 1.4em;
-    }
-
-    .navbar {
-        width: 100%;
-
     }
 
 
