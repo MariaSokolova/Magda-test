@@ -34,9 +34,6 @@ body {
     background-color: #ffffff;
     z-index: 2;
     border: 6px solid greenyellow;
-
-
-
     position: fixed;
     top: 0;
     left:0;
@@ -76,7 +73,7 @@ body {
 }
 
 .menu_link {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 400;
     line-height: 1.2em;
     color: #454545;
@@ -97,43 +94,57 @@ nav ul{
     border-bottom: 3px solid rgba(84, 84, 212, 1);
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+
+
+    /* for mobile */
+    /* HEADER */
+    .header {
+        position: relative;
+        margin: 0;
+    }
+
+    .logo-page {
+        font-size: 1.4em;
+    }
+
+    .menu_link {
+        font-size: .8em;
+        line-height: 0.6em;
+        padding: 0 0.7em;
+    }
+}
+
 
 /*****************************************/
 
 /* MAIN */
 
 .main {
-
     flex-basis: 1000px;
     margin: 0;
-    padding: 0;
-
+    padding: 93px 0 0 0 ;
     background-image: url("./IMG/Frame\ 1@3x.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border: 6px solid greenyellow;
-
 }
 
-div.box {
+.box {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: lightcoral;
     border: 4px solid blueviolet;
-
 }
 
-.col {
-    margin: 6em 3em 0em 4em;
-}
-
-div.paragraph-box {
+.paragraph-box {
     background-color: rgb(117, 177, 94);
     width: 50%;
-
+    margin: 2rem 2rem;
 }
 
 .trading-paragraph {
@@ -145,11 +156,12 @@ div.paragraph-box {
     background-color: greenyellow;
 }
 
-div.img-box {
+.img-box {
     position: relative;
     background-color: orange;
     width: 50%;
     border: 4px solid blueviolet;
+    margin: 2rem 2rem;
 }
 
 img.swimming {
@@ -175,15 +187,27 @@ video {
     border: none;
     cursor: pointer;
     z-index: 1;
-
-
-
 }
 
 .fa-play {
     color: #ffffff;
 }
+/* MEDIA QUERIES */
 
+@media (max-width: 600px) {
+
+    .box {
+        flex-wrap: wrap;
+    }
+    .paragraph-box {
+        width: 100%;
+        margin: 2rem 2rem;
+    }
+    .img-box {
+        width: 100%;
+        margin: 2rem 2rem;
+    }
+}
 
 
 
@@ -588,25 +612,4 @@ ul.contact-row {
 
 /****************************/
 
-/* MEDIA QUERIES */
 
-@media (max-width: 600px) {
-
-
-    /* for mobile */
-    /* HEADER */
-    .header {
-        position: relative;
-        margin: 0;
-    }
-
-    .logo-page {
-        font-size: 1.4em;
-    }
-
-    .menu_link {
-        font-size: 1em;
-        line-height: 0.6em;
-        padding: 0 1em;
-    }
-}
